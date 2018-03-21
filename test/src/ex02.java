@@ -11,5 +11,11 @@ public class ex02 {
 		add(1,3);
 		String result = add2(1,5);
 		System.out.println(result);
+		String[] strArr = {"월","화","수","목","금","토","일"};
+		for(int i=0;i<strArr.length;i++) {
+			System.out.println(strArr[i]);
+		}
+		System.out.println(strArr.length);
 	}
+	
 }
