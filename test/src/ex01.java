@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class test11 {
+public class ex01 {
 	
 	public static void main(String[] agrs) {
 		Scanner s = new Scanner("우리나라\n대한민국\n");
