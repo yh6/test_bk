@@ -21,7 +21,8 @@ public class Dog {
 	public void run() {
 		System.out.println(name + "가 달립니다.");
 	}
-	public String toString() {
+	public String toString() {  //toSting 수를 문자열로 리턴한다
 		return kind + "종이고,이름은:" + name + "이고," + "나이는 " + age + "살 입니다.";
+		
 	}
 }

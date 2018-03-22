@@ -7,15 +7,20 @@ public class Execute {
 	
 	public static void main(String[] args) {
 		
-		ArrayList<Dog> dogList = new ArrayList<Dog>(); 
+		ArrayList<Dog> dogList = new ArrayList<Dog>();  
+		new Dog("Ä«µå",5,"¿äÄí¼Å").back();
+		new Dog("Ä«µå",5,"¿äÄí¼Å").run();
+		new Dog("Ä«µå",5,"¿äÄí¼Å").toString();
+		System.out.println();
 		dogList.add(new Dog("»Ç»ß",5,"¿äÄí¼Å")); //Dog dog = new Dog("Ä«µå1",5,"¿äÄí¼Å"); dogArr.add(dog);
 		dogList.add(new Dog("ÂÝ",10,"Çªµé"));
 		dogList.add(new Dog("¸Þ¸®",3,"Â÷¿ìÂ÷¿ì"));
 		dogList.add(new Dog("²É¼ÛÀÌ",7,"Æ÷¸Þ"));
 		dogList.add(new Dog("¸Á°í",1,"¸»¶ó¹ÂÆ®"));
+		//dogList.remove(1); //¹æ(index)»èÁ¦
 		for(Dog d:dogList) {
 			System.out.println(d);
-		//new Dog("Ä«µå",5,"¿äÄí¼Å").back();
+		
 		}
 		
 	}
