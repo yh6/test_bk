@@ -11,11 +11,11 @@ public class DBCon {
 	public static void main(String[] agrs) {
 		Connection con = null;
 		String url = "jdbc:mysql://localhost:3306/java"; //mysql데이터베이스이름
-		String Id = "root";
-		String Pwd = "dusgml66";
+		String id = "root";
+		String pwd = "dusgml66";
 		try {
 			Class.forName("org.mariadb.jdbc.Driver"); //전화기위치 Class->new해줌 reflection 
-			con = DriverManager.getConnection(url,Id,Pwd);
+			con = DriverManager.getConnection(url,id,pwd);
 			String sql = "select * from user_info";
 			Statement stmt = con.createStatement(); //쿼리 하얀바탕
 			ResultSet rs = stmt.executeQuery(sql); //executeQurey("select * from user_info")
