@@ -1,4 +1,4 @@
-package test18;
+package test19;
 
 import java.io.IOException;
 import java.sql.ResultSet;
@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import test18.AtDBCon;
 /*int a = 3;
 String str = Integer.toStirng(a);
 String a=123;
@@ -28,6 +30,9 @@ public class MariaCon extends AtDBCon{
 				String name = map.get("name");
 				if("흑길동".equals(name)) {
 					map.put("name", "박보검");
+					int result = mc.updete(map);
+					System.out.println("수정건수 : " + result);
+					
 				}
 			}
 			
@@ -62,6 +67,14 @@ public class MariaCon extends AtDBCon{
 	}
 	@Override
 	public int updete(Map<String,String> map) {
+		String sql = "update user_info set name='" + map.get("name")+ "'" + "where num=" + map.get("num");
+		try {
+			Statement stat = con.createStatement();
+			int result = stat.executeUpdate(sql); 
+			return result;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}		
 		return 0;
 	}
 	@Override
@@ -70,6 +83,8 @@ public class MariaCon extends AtDBCon{
 	}
 	@Override
 	public int insert(Map<String, String> map) {
+	
 		return 0;
 	}
+	
 }

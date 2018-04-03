@@ -2,6 +2,6 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="D:/java/lib/mariadb-java-client-1.1.7.jar"/>
+	<classpathentry kind="lib" path="D:/java/lib/mariadb-java-client-1.1.7.jar" sourcepath="C:/Users/ADMINI~1/AppData/Local/Temp/.org.sf.feeling.decompiler1522663773889/source/mariadb-java-client-1.1.7-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

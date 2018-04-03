@@ -17,7 +17,7 @@ public abstract class AtDBCon {
 	private String pwd;
 	private String driver;
 
-	AtDBCon(String filePath) throws IOException {
+	public AtDBCon(String filePath) throws IOException {
 		InputStream is;
 		is = getClass().getClassLoader().getResourceAsStream(filePath); // filePath src에 파일을 찾눈다.
 
@@ -47,8 +47,14 @@ public abstract class AtDBCon {
 	//데이터 입력 추상메소드
 	public abstract List<Map<String,String>> select();
 	//데이터 
-	public abstract int updete();
-	public abstract int delete();
+
+	public abstract int delete(Map<String, String> map);
 	//데이저 조회 추상메소드
-	public abstract int insert();
+	public abstract int insert(Map<String, String> map);
+
+
+	public int updete(Map<String, String> map) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }
